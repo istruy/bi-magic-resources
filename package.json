@@ -6,7 +6,7 @@
   "scripts": {
     "pull": "node scripts/pull.js",
     "push": "yarn build && yarn _push",
-    "start": "node scripts/start-react.js",
+    "start": "node scripts/start-react.js --openssl-legacy-provider",
     "test": "./node_modules/.bin/jest --passWithNoTests",
     "build": "rimraf dist && yarn test && webpack --env build",
     "_push": "node scripts/push.js",
